@@ -12,6 +12,7 @@ PADDLE_SPEED = 5
 # Colors
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
+RED = (255, 0, 0)
 
 # Create the game window
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
@@ -50,7 +51,7 @@ while running:
 
     # Update screen
     screen.fill(BLACK)
-    pygame.draw.rect(screen, WHITE, player_paddle)
+    pygame.draw.rect(screen, RED, player_paddle)
     pygame.draw.rect(screen, WHITE, opponent_paddle)
     pygame.draw.ellipse(screen, WHITE, ball)
     pygame.draw.aaline(screen, WHITE, (WIDTH // 2, 0), (WIDTH // 2, HEIGHT))
